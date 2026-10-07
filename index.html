@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#f7f7f5" />
+    <title>Task Tracker</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="tracker" aria-labelledby="tracker-title">
+      <header class="tracker__header">
+        <h1 id="tracker-title">Task Tracker</h1>
+      </header>
+
+      <form class="task-form" id="task-form">
+        <label class="visually-hidden" for="task-input">New task</label>
+        <input
+          id="task-input"
+          name="task"
+          type="text"
+          placeholder="Start writing and press enter to create task"
+          autocomplete="off"
+          maxlength="240"
+          required
+        />
+        <button class="add-button" type="submit" aria-label="Add task">
+          <svg aria-hidden="true" width="21" height="21" viewBox="0 0 24 24" fill="none">
+            <path d="M12 5v14M5 12h14" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+          </svg>
+        </button>
+      </form>
+
+      <ul class="task-list" id="task-list" aria-label="Tasks" aria-live="polite"></ul>
+      <p class="task-count" id="task-count" aria-live="polite"></p>
+    </main>
+
+    <script src="script.js" defer></script>
+  </body>
+</html>
