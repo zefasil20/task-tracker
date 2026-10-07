@@ -2,6 +2,10 @@
 
 A lightweight, responsive task tracker built with vanilla HTML, CSS, and JavaScript.
 
+## Project URL
+
+https://roadmap.sh/projects/task-tracker-js
+
 ## Features
 
 - Add a task by entering a description and pressing Enter or the add button.
